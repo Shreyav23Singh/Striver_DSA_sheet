@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        char input =sc.next().charAt(0);
+        
+        if(Character.isUpperCase(input)){
+            System.out.println("1");
+        }else if(Character.isLowerCase(input)){
+            System.out.println("0");
+        }else{
+            System.out.println("-1");
+        }
+    }
+
+}
