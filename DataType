@@ -1,0 +1,28 @@
+Question. Data type refers to the type of value of a variable has and the way the computer interprets it . Each data has a different size . You've studied 5 different data types and the size of data types. 
+  Integer : 4 bytes , Long 8 bytes , float 4 bytes , double 8bytes , character 1 bytes , write a program in java , if data type given as input than size will come as output.
+
+
+public class Solution {
+    public static int dataTypes(String type) {
+        
+            switch(type){
+                case "Integer":
+                return 4;
+                case "Long":
+                return 8;
+                case "Float":
+                return 4;
+                case "Double":
+                return 8;
+                case "Character":
+                return 1;
+                default:
+                return -1;
+            }
+        
+
+
+        
+    }
+}
+    
