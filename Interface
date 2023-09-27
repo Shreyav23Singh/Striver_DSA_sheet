@@ -5,3 +5,57 @@ Ans:-
 3. By default , variables are "public static final " i.e, we don't have to write .
 4. By default , methods are "public and abstarct "
 5. No constructor in interfce
+
+\\Example
+interface Shape{
+    double calculateArea();//method for calculating area of a circle
+    double calculatePerimeter();//method for calculating perimeter of a circle
+ 
+}
+class Circle implements Shape{
+    private double radius;
+    
+   //constructor
+   public Circle(double radius){
+       this.radius=radius;
+   }
+   
+   public double calculateArea(){
+       return Math.PI * radius *radius;
+   }
+   
+   public double calculatePerimeter(){
+       return 2 *Math.PI * radius ;
+   }
+    
+}
+
+class main{
+    public static void main(String args[]){
+        Circle cr=new Circle(5);
+        
+            System.out.println("Area of Circle is :" +cr.calculateArea());
+            System.out.println("Perimeter of Circle is :" +cr.calculatePerimeter());
+        
+    
+    }
+}
+
+
+Output:-
+java -cp /tmp/rL2cHriumW main
+Area of Circle is :78.53981633974483
+Perimeter of Circle is :31.41592653589793
+
+
+You are correct that interfaces in Java cannot have constructors, as they are meant to define a contract for classes to implement.
+In the code example I provided, the constructor is actually part of the `Circle` class, which is a concrete class that implements the
+`Shape` interface.
+
+The constructor in the `Circle` class is used to initialize the `radius` field when a `Circle` object is created. 
+This constructor is not part of the `Shape` interface but is necessary for creating instances of the `Circle` class.
+The `Circle` class itself is implementing the `Shape` interface by providing implementations for the `calculateArea()` and
+`calculatePerimeter()` methods required by the interface.
+
+So, to clarify, the constructor is not part of the interface; it's part of the implementing class that provides concrete behavior for the methods 
+declared in the interface.
