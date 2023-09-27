@@ -59,3 +59,14 @@ The `Circle` class itself is implementing the `Shape` interface by providing imp
 
 So, to clarify, the constructor is not part of the interface; it's part of the implementing class that provides concrete behavior for the methods 
 declared in the interface.
+
+
+------------------------------------------------**********************-------------------------------------------------------------------------
+Importance of Interface :-
+>> Interfaces are an important concept in object-oriented programming and have several key advantages and use cases:
+
+1.>> Abstraction: Interfaces allow you to define a contract for classes without specifying the implementation details. 
+This means that you can create a blueprint for a set of methods that classes must implement, promoting abstraction and separation of concerns.
+
+2.>> Multiple Inheritance: Unlike classes in Java, which do not support multiple inheritance (i.e., a class can inherit from only one superclass),
+a class can implement multiple interfaces. This enables a class to inherit and use functionality from multiple sources, promoting code reuse.
