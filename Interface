@@ -1,0 +1,7 @@
+What is an interface?
+Ans:-
+1. It will only abstarct methods
+2. It cannot be intantiated - Means objects can't be make of it
+3. By default , variables are "public static final " i.e, we don't have to write .
+4. By default , methods are "public and abstarct "
+5. No constructor in interfce
