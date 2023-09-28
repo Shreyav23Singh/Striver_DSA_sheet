@@ -1,0 +1,70 @@
+1. A binary tree is a tree data structure in which each node can have at most two children, which are referred to as the left child and the right child. 
+
+2. The topmost node in a binary tree is called the root, and the bottom-most nodes are called leaves. A binary tree can be visualized as a hierarchical
+structure with the root at the top and the leaves at the bottom.
+
+3.Binary trees have many applications in computer science, including data storage and retrieval, expression evaluation, network routing, and game AI.
+They can also be used to implement various algorithms such as searching, sorting, and graph algorithms.
+
+---------------------------------------* * * *  Representation of Binary Tree: * * * * ------------------------------------------------------------------------
+
+Each node in the tree contains the following:
+1.  Data
+2.  Pointer to the left child
+3.  Pointer to the right child
+
+----------------------------------------* * * * * Basic Operations On Binary Tree: * * * * ---------------------------------------------------------------------
+
+1. Inserting an element.
+2. Removing an element.
+3. Searching for an element.
+4. Deletion for an element.
+5. Traversing an element. 
+
+----------------------------------------* * * * * Auxiliary Operations On Binary Tree: * * * * ---------------------------------------------------------------------
+
+1.  Finding the height of the tree
+2.  Find the level of the tree
+3.  Finding the size of the entire tree.
+
+
+----------------------------------------* * * * * Applications of  Binary Tree: * * * * ---------------------------------------------------------------------
+
+1.  In compilers, Expression Trees are used which is an application of binary trees.
+2.  Huffman coding trees are used in data compression algorithms.
+3.  Priority Queue is another application of binary tree that is used for searching maximum or minimum in O(1) time complexity.
+4.  Represent hierarchical data.
+5.  Used in editing software like Microsoft Excel and spreadsheets.
+6.  Useful for indexing segmented at the database is useful in storing cache in the system,
+7.  Syntax trees are used for most famous compilers for programming like GCC, and AOCL to perform arithmetic operations.
+8.  For implementing priority queues.
+9.  Used to find elements in less time (binary search tree)
+10. Used to enable fast memory allocation in computers. 
+11. Used to perform encoding and decoding operations.
+12. Binary trees can be used to organize and retrieve information from large datasets, such as in inverted index and k-d trees.
+13. Binary trees can be used to represent the decision-making process of computer-controlled characters in games, such as in decision trees.
+14. Binary trees can be used to implement searching algorithms, such as in binary search trees which can be used to quickly find an element in a sorted list.
+15. Binary trees can be used to implement sorting algorithms, such as in heap sort which uses a binary heap to sort elements efficiently.
+
+----------------------------------------------------------------------* * *  * Binary Tree Traversals: * * * * ---------------------------------------------------------------
+
+Tree Traversal algorithms can be classified broadly into two categories:
+
+1.  Depth-First Search (DFS) Algorithms
+2.  Breadth-First Search (BFS) Algorithms
+
+> >   Tree Traversal using Depth-First Search (DFS) algorithm can be further classified into three categories: < < 
+# 1. >>     Preorder Traversal (current-left-right): Visit the current node before visiting any nodes inside the left or right subtrees.
+            Here, the traversal is root – left child – right child. It means that the root node is traversed first then its left child and finally the right child.
+
+# 2. >>    Inorder Traversal (left-current-right): Visit the current node after visiting all nodes inside the left subtree but before visiting any node within the
+           right subtree. Here, the traversal is left child – root – right child.  It means that the left child is traversed first then its root node and finally the right child.
+
+#3. >>     Postorder Traversal (left-right-current): Visit the current node after visiting all the nodes of the left and right subtrees.  Here, the traversal 
+           is left child – right child – root.  It means that the left child has traversed first then the right child and finally its root node.
+
+
+>  >    Tree Traversal using Breadth-First Search (BFS) algorithm can be further classified into one category:
+
+#  1. >> Level Order Traversal:  Visit nodes level-by-level and left-to-right fashion at the same level. Here, the traversal is level-wise. It means that the most left child has 
+         traversed first and then the other children of the same level from left to right have traversed. 
