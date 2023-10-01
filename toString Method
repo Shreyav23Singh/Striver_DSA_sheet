@@ -1,0 +1,29 @@
+
+In Java, the toString() method is a predefined method provided by the Object class, which is the root class for all Java classes. 
+The primary purpose of the toString() method is to return a string representation of an object. This string should be a concise and informative representation of the object's state.
+
+class Stdetails {
+    private String name;
+    private int age;
+    private String address;
+
+    public Stdetails(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    // If we want to print values, we should use toString() method
+    public String toString() {
+        return "Name: " + name + ", Age: " + age + ", Address: " + address;
+    }
+}
+
+class Student {
+    public static void main(String args[]) {
+        Stdetails st1 = new Stdetails("Shreya", 23, "Bangalore");
+        System.out.println(st1);
+        Stdetails st2 = new Stdetails("Prachi", 24, "Piku");
+        System.out.println(st2); // Use println to add a newline after printing st2
+    }
+}
